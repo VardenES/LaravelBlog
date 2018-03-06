@@ -1,4 +1,4 @@
 Return [
-	'email' => 'victorlopez@grupoforquisa.com',
+	'email' => 'v.lopezarcas@gmail.com',
 	'name'	=> 'Victor',
 ];

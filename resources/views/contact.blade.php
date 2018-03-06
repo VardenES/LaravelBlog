@@ -11,7 +11,7 @@
 	@endif
 	
 	<div class="col-12 col-md-6">
-		<form class="form-horizontal" method="POST" action="/contact">
+		<form class="form-horizontal" method="POST" action="{{ asset('/contact') }}">
 			{{ csrf_field() }} 
 			<div class="form-group">
 			<label for="Name">Name: </label>
@@ -34,4 +34,4 @@
 		</form>
 	</div>
  </div> <!-- /container -->
-@endsection
+@stop

@@ -16,6 +16,9 @@ class ContactController extends Controller
 
     public function show()
     {
+        Office::create($request->all());
+        \Session::flash('flash_message','Office successfully added.');
+        
         return view('contact');
     }
 
