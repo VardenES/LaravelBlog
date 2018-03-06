@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/blog', 'BlogController@index');
 
 Route::get('/blog/{slug}', 'BlogController@showPost');
+
+Route::get('contact', 'ContactController@show');
+Route::post('contact', 'ContactController@mailToAdmin');
+//Route::get('/contact', 'ContactController@create')->name('contact.create');
+
+//Route::post('/contact', 'ContactController@store')->name('contact.store');
+
+// https://www.easylaravelbook.com/blog/creating-a-contact-form-in-laravel-5-using-the-form-request-feature/
